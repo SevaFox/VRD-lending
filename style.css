@@ -35,6 +35,7 @@ h1{
 header{
     background-color: #1B1B1B;
     display: flex;
+    max-height: 51px;
 }
 
 nav:last-child{
@@ -95,46 +96,121 @@ nav>ul>li>a:hover{
 }
 
 main{
+    z-index: 0px;
     background-color: #111111;
+    overflow: hidden;
+}
+
+.hat-container{
+    max-height: 624px;
+    max-width: 1360px;
+    margin: 0px auto;
 }
 
 .Elipse-1{
+    margin: 0px;
     position: relative;
-    top: -120px;
-    left: -53px;
-    float: left;
+    top: -900px;
+    left: -140px;
     background-color: #18F0E8;
     width: 182px;
     height: 182px;
     border-radius: 50%;
     box-shadow: 0px 4px 88px #18F0E8;
+    animation-name: svg-animate;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .Elipse-2{
+    position: relative;
+    top: -1170px;
+    left: 1300px;
     width: 405px;
     height: 405px;
     background: #2C00F0;
     box-shadow: -14px 0px 88px #2C00F0;
     border-radius: 50%;
-    float: right;
+    animation-name: svg-animate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .player{
+    position: relative;
+    top: -175px;
+    left: 540px;
     width: 648px;
     height: 508px;
-    float: right;
 }
 
-.hat>h1{
+.svg-hc{
     position: relative;
-    position: absolute;
-    width: 442px;
-    height: 77px;
-    left: 143px;
-    top: 128px;
-    font-weight: 700;
+    top: -820px;
+    left: 600px;
+    filter: drop-shadow(0px 0px 88px #FFFFFF);
+    animation-name: svg-animate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.hctext{
+    position: relative;
+    top: 77px;
+    left: 0px;
+    text-align: center;
+    width: 534px;
+}
+
+.hctext>h1{
+    font-family: Play-Bold;
+    color: #FF0000;
     font-size: 64px;
     line-height: 74px;
+    text-shadow: 6px 5px 4px #FFFFFF;
+}
+
+.hctext>h1>span:nth-child(1){
+    color: #FAFF00;
+}
+
+.hctext>h1>span:nth-child(2){
+    color: #0066FF;
+}
+
+.hctext>p{
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hat-container>button{
+    transition: 0.3s;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 20px;
+    position: relative;
+    top: -65px;
+    left: 150px;
+    background: #ED480C;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 0px #F57446;
+}
+
+.hat-container>button:hover{
+    transition: 0.3s;
+    background: #E61D00;
+    box-shadow: 9px 8px #DE432C;
 }
 
 .features-container{
@@ -150,6 +226,7 @@ main{
 
 .box-container{
     display: flex;
+    flex-wrap: wrap;
     margin: 0px auto 0px auto;
     padding-bottom: 214px;
     max-width: 1300px;
@@ -176,10 +253,6 @@ main{
     text-align: center;
     margin: 0px auto 0px auto;
     width: 257px;
-}
-
-.main-img-2{
-    box-shadow: 0px 0px 88px #F05301;
 }
 
 .prise-container{
@@ -299,6 +372,51 @@ main{
 .gift-box>h4{
     font-size: 24px;
     line-height: 28px;
+}
+
+.bt-s3,
+.bt-s2,
+.bt-s1{
+    height: 0px;
+    max-width: 1400px;
+    margin: 0px auto 0px auto;
+}
+
+.bt-s3>img{
+    position: relative;
+    top: -250px;
+    left: -240px;
+    filter: drop-shadow(0px 0px 55px #00FFF4);
+    animation-name: svg-animate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bt-s2>img{
+    z-index: 1;
+    position: relative;
+    top: -260px;
+    left: 1135px;
+    filter: drop-shadow(0px 0px 88px #F05301);
+    animation-name: svg-animate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bt-s1>img{
+    position: relative;
+    top: -260px;
+    left: -270px;
+    filter: drop-shadow(0px 0px 88px #F0002F);
+    animation-name: svg-animate;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
 .about-us{
