@@ -192,7 +192,7 @@ main{
     color: #FFFFFF;
 }
 
-.hat-container>button{
+.hat-container>a>button{
     transition: 0.3s;
     font-size: 28px;
     line-height: 32px;
@@ -207,7 +207,7 @@ main{
     box-shadow: 3px 3px 0px #F57446;
 }
 
-.hat-container>button:hover{
+.hat-container>a>button:hover{
     transition: 0.3s;
     background: #E61D00;
     box-shadow: 9px 8px #DE432C;
